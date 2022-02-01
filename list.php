@@ -87,7 +87,7 @@ $page = str_replace('###CONTENT###', $content, $page);
 echo $page;
 ?>
 
-
+    <button onclick="window.location.href='formular.php'"  class="btn btn-info">QR-Code eintragen</button>
 <?php
 // style="border: 1px solid red"
 /**

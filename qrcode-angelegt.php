@@ -77,7 +77,7 @@
     <p>
         Sie finden ihren QR-Code unter "Angelegt". Mit dem button kommen sie zurück zur Hauptseite
     </p>
-    <a href="website.html">Zurück</a>
+    <a href="list.php">Zurück</a>
 </div>
 <!--Script-->
 <script type="text/javascript">
