@@ -16,25 +16,7 @@ if(isset($_GET['id'])){
     die();
 }
 
-$sql = 'select * from abc_project.qrcodes';
-$QRCodes = query($sql);
 
-foreach($QRCodes as $code){
-    $path = 'images/';
-    $file1 = $path.$code['id'].".svg";
-    $url='http://192.168.0.4/?id='.$code['id'];
-    $svgCode = QRcode::svg($url);
-
-    $text1 = $code['url'];
-    $sql = 'SELECT count(1) as summe FROM abc_project.visits WHERE q_id = '.$code['id'];
-    $counter = query($sql);
-
-    file_put_contents($file1, $svgCode);
-
-    echo $counter[0]['summe'].'x '.$code['title']."<br>";
-    echo "<img src='".$file1."'><br>";
-
-}
 
 ?>
 

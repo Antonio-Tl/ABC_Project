@@ -1,27 +1,27 @@
-<html lang="de">
-<head>
-    <title>URL Abfrage</title>
-</head>
-<body>
-
+<?php
+$content = <<< EOTM
+<style>
+input {
+    size: 10 ! important;
+}
+</style>
 <form action="formularAction.php" method="POST">
     <ul>
         <li>
-            <label for="f1">Titel:</label>
-            <input type="text" id="f1" name="title">
+            <label class="col-form-label mt-4" for="f1">Titel:</label>
+            <input class="form-control" placeholder="Titel z.B. ABC-Club" type="text" id="f1" name="title" size="10 !important">
         </li>
         <li>
-            <label for="f2">URL:</label>
-            <input type="text" id="f2" name="url">
+            <label class="col-form-label mt-4" for="f2">URL:</label>
+            <input class="form-control" size="50" placeholder="Url z.B. https://abc-club.de/" type="text" id="f2" name="url">
         </li>
     </ul>
 
-    <button type="submit">Send your message</button>
-</form>
-<form action="deleteaction.php" method="POST">
-    <button type="submit">Alles Löschen</button>
+    <button type="submit" class="btn btn-info">Send your message</button>
 </form>
 
-
-</body>
-</html>
+EOTM;
+$template = file_get_contents('website.html');
+$page = str_replace('###TITLE###', 'Neuen QR-Code eintragen', $template);
+$page = str_replace('###CONTENT###', $content, $page);
+echo $page;

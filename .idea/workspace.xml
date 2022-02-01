@@ -2,17 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24353fe1-9265-42f5-b706-1a7880a618df" name="Changes" comment="added saz (doesnt work, help)">
+      <change afterPath="$PROJECT_DIR$/list.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/projekte/minigame2/ip.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qrcode-angelegt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formular.php" beforeDir="false" afterPath="$PROJECT_DIR$/formular.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formularAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/formularAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/30.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/30.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/31.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/31.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/32.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/32.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekte/minigame2" beforeDir="false" afterPath="$PROJECT_DIR$/projekte/minigame2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekte/schule" beforeDir="false" afterPath="$PROJECT_DIR$/projekte/schule" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projekte/schule/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/projekte/schule/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projekte/schule/saz.php" beforeDir="false" afterPath="$PROJECT_DIR$/projekte/schule/saz.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website.html" beforeDir="false" afterPath="$PROJECT_DIR$/website.html" afterDir="false" />
     </list>
-    <list id="e16e0020-4f88-4f65-9319-de7b75dc3de6" name="Changes by Arlind" comment="arlinds changes" />
+    <list id="0e6f4748-bf14-432f-9053-d75f1b0c2401" name="Changes by Arlind" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/php-qrcode-master/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -23,7 +37,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/projekte/schule" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -62,6 +76,7 @@
       <recent name="C:\xampp\htdocs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs" />
       <recent name="C:\xampp\htdocs\projekte" />
     </key>
   </component>
@@ -104,6 +119,7 @@
       <workItem from="1643390001101" duration="4261000" />
       <workItem from="1643612323448" duration="14705000" />
       <workItem from="1643637833877" duration="9322000" />
+      <workItem from="1643698733155" duration="12076000" />
     </task>
     <task id="LOCAL-00001" summary="changed everything from get params to session params">
       <created>1643123683227</created>

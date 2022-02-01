@@ -8,5 +8,5 @@ $sql = 'insert into abc_project.qrcodes(id, title, url, created_at)
         values(null, "' . $_POST['title'] . '", "' . $_POST['url'] . '", NOW())';
 query($sql);
 
-header('Location: index.php');
+header('Location: qrcode-angelegt.php');
 die();
