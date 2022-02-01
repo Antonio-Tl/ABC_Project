@@ -13,7 +13,7 @@ $content =
             <th scope="row">Views</th>
         </tr>';
 
-$sql = 'select * from abc_project.qrcodes';
+$sql = 'select * from '.$DB.'qrcodes';
 $QRCodes = query($sql);
 
 foreach($QRCodes as $code){
@@ -23,7 +23,7 @@ foreach($QRCodes as $code){
     $svgCode = QRcode::svg($url);
 
     $text1 = $code['url'];
-    $sql = 'SELECT count(1) as summe FROM abc_project.visits WHERE q_id = '.$code['id'];
+    $sql = 'SELECT count(1) as summe FROM '.$DB.'visits WHERE q_id = '.$code['id'];
     $counter = query($sql);
 
     file_put_contents($file1, $svgCode);
@@ -91,10 +91,3 @@ echo $page;
 
     <button onclick="window.location.href='formular.php'"  class="btn btn-info">QR-Code eintragen</button>
 <?php
-// style="border: 1px solid red"
-/**
- *     $content .= '<td style="border: 1px solid red">';
-$content .= $counter[0]['summe'].'x '.$code['title']."<br>";
-$content .= "<img src='".$file1."'><br>";
-$content .= '</td>';
- **/

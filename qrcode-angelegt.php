@@ -75,7 +75,7 @@
     <button id="close">&times;</button>
     <h2>Erfolgreich Angelegt</h2>
     <p>
-        Sie finden ihren QR-Code unter "Angelegt". Mit dem button kommen sie zurück zur Hauptseite
+        Sie finden ihren QR-Code unter "Anlegen". Mit dem button kommen sie zurück zur Liste mit den QR-Codes
     </p>
     <a href="list.php">Zurück</a>
 </div>

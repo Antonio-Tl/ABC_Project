@@ -19,7 +19,7 @@ foreach($QRCodes as $code){
     $svgCode = QRcode::svg($url);
 
     $text1 = $code['url'];
-    $sql = 'SELECT count(1) as summe FROM abc_project.visits WHERE q_id = '.$code['id'];
+    $sql = 'SELECT count(1) as summe FROM '.$DB.'visits WHERE q_id = '.$code['id'];
     $counter = query($sql);
 
     file_put_contents($file1, $svgCode);
@@ -74,7 +74,7 @@ echo $page;
 
 
 if(isset($_GET['id'])){
-    $sql = 'SELECT * FROM abc_project.qrcodes WHERE id = '.(int)$_GET['id'];
+    $sql = 'SELECT * FROM '.$DB.'qrcodes WHERE id = '.(int)$_GET['id'];
     $qrs = query($sql);
     if(!sizeof($qrs) ){
         die('ungültige id');
