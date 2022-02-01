@@ -13,7 +13,7 @@ $content =
             <th scope="row">Views</th>
         </tr>';
 
-$sql = 'select * from '.$DB.'qrcodes';
+$sql = 'select * from '.$DB.'.qrcodes';
 $QRCodes = query($sql);
 
 foreach($QRCodes as $code){
