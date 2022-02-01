@@ -1,7 +1,7 @@
 <?php
 require_once 'database.php';
-require_once('php-qrcode-master/lib/full/qrlib.php');
-
+require_once 'php-qrcode-master/lib/full/qrlib.php';
+require 'config.php';
 $content =
     '<table class="table table-hover">
         <tr class="table-info">
@@ -9,13 +9,13 @@ $content =
             <th scope="row">Link auf SVG</th>
         </tr>';
 
-$sql = 'select * from abc_project.qrcodes';
+$sql = 'select * from '.$DB.'.qrcodes';
 $QRCodes = query($sql);
 
 foreach($QRCodes as $code){
     $path = 'images/';
     $file1 = $path.$code['id'].".svg";
-    $url='http://192.168.0.4/?id='.$code['id'];
+    $url='http://'.$SERVERIP.'/?id='.$code['id'];
     $svgCode = QRcode::svg($url);
 
     $text1 = $code['url'];
@@ -66,6 +66,7 @@ $content .= '    <script>
             modal.style.display = "none";
     }
     </script>';
+
 $template = file_get_contents('website.html');
 $page = str_replace('###TITLE###', 'Liste der QR-Codes', $template);
 $page = str_replace('###CONTENT###', $content, $page);
@@ -78,7 +79,7 @@ if(isset($_GET['id'])){
     if(!sizeof($qrs) ){
         die('ungültige id');
     }
-    $sql = 'INSERT INTO abc_project.visits VALUES (null, NOW(),'.(int)$_GET['id'].', "'.mysqli_real_escape_string($dbh, serialize($_SERVER)).'")';
+    $sql = 'INSERT INTO '.$DB.'.visits VALUES (null, NOW(),'.(int)$_GET['id'].', "'.mysqli_real_escape_string($dbh, serialize($_SERVER)).'")';
     query($sql);
     header('Location: '.$qrs[0]['url']);
     die();

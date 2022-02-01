@@ -1,6 +1,6 @@
 <?php
 $content = <<< EOTM
-
+<div style="width:600px">
 <form action="formularAction.php" method="POST">
     <ul>
         <li>
@@ -13,9 +13,9 @@ $content = <<< EOTM
         </li>
     </ul>
 
-    <button type="submit" class="btn btn-info">Send your message</button>
+    <button type="submit" class="btn btn-info">QR-Code generieren</button>
 </form>
-
+</div>
 EOTM;
 $template = file_get_contents('website.html');
 $page = str_replace('###TITLE###', 'Neuen QR-Code eintragen', $template);

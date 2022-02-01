@@ -2,10 +2,11 @@
 
 function connect()
 {
+    require 'config.php';
     global $dbh;
 
     if (!$dbh) {
-        $dbh = mysqli_connect('127.0.0.1', 'root', '');
+        $dbh = mysqli_connect($DBHOST, $DBUSER, $DBPASSWORD);
     }
 }
 

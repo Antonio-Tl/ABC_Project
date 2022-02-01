@@ -1,6 +1,8 @@
 <?php
 require_once 'database.php';
 require_once('php-qrcode-master/lib/full/qrlib.php');
+require 'config.php';
+
 $content =
     '<table class="table table-hover">
         <tr class="table-info">

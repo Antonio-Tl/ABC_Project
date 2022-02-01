@@ -1,6 +1,7 @@
 <?php
 
-require_once('php-qrcode-master/lib/full/qrlib.php');
+require_once'php-qrcode-master/lib/full/qrlib.php';
+require 'config.php';
 
 // SVG file format support
 
