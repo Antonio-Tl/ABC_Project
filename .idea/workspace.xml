@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="24353fe1-9265-42f5-b706-1a7880a618df" name="Changes" comment="added saz (doesnt work, help)">
+      <change afterPath="$PROJECT_DIR$/projekte/minigame2/ip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekte/schule/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/projekte/schule/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekte/schule/saz.php" beforeDir="false" afterPath="$PROJECT_DIR$/projekte/schule/saz.php" afterDir="false" />
+    </list>
+    <list id="e16e0020-4f88-4f65-9319-de7b75dc3de6" name="Changes by Arlind" comment="arlinds changes" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/projekte/schule" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="248Jt4Qgg0gHNRErKF70Xf6Kxhu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="import_schema_mapping" value="&lt;schema-mapping&gt;&lt;databases&gt;&lt;list&gt;&lt;schema-mapping-item&gt;&lt;source-data-source-id&gt;ae194759-0bc3-49bb-b786-13cfba11d471&lt;/source-data-source-id&gt;&lt;source-path&gt;schema/&quot;abc&quot;&lt;/source-path&gt;&lt;target-data-source-id&gt;ae194759-0bc3-49bb-b786-13cfba11d471&lt;/target-data-source-id&gt;&lt;target-path&gt;schema/&quot;abc&quot;&lt;/target-path&gt;&lt;/schema-mapping-item&gt;&lt;/list&gt;&lt;/databases&gt;&lt;/schema-mapping&gt;" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/schule" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\schule" />
+      <recent name="C:\xampp\htdocs\minigame" />
+      <recent name="C:\xampp\htdocs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\projekte" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/minigame/index.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\ruffy\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24353fe1-9265-42f5-b706-1a7880a618df" name="Changes" comment="" />
+      <created>1643006494346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643006494346</updated>
+      <workItem from="1643006497048" duration="4628000" />
+      <workItem from="1643011350648" duration="11427000" />
+      <workItem from="1643036416803" duration="6199000" />
+      <workItem from="1643045996813" duration="7234000" />
+      <workItem from="1643093457521" duration="2758000" />
+      <workItem from="1643105020424" duration="1759000" />
+      <workItem from="1643109320921" duration="2074000" />
+      <workItem from="1643119456538" duration="87000" />
+      <workItem from="1643122074456" duration="2404000" />
+      <workItem from="1643193967637" duration="1319000" />
+      <workItem from="1643207784187" duration="1827000" />
+      <workItem from="1643273295653" duration="13315000" />
+      <workItem from="1643292617484" duration="7578000" />
+      <workItem from="1643353422222" duration="17219000" />
+      <workItem from="1643382262766" duration="6208000" />
+      <workItem from="1643390001101" duration="4261000" />
+      <workItem from="1643612323448" duration="14705000" />
+      <workItem from="1643637833877" duration="9322000" />
+    </task>
+    <task id="LOCAL-00001" summary="changed everything from get params to session params">
+      <created>1643123683227</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1643123683227</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changes by Sebastian">
+      <created>1643125417680</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643125417680</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added listC.php to index.php">
+      <created>1643358948678</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643358948678</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added &quot;Fach&quot; on listC.php">
+      <created>1643360313799</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1643360313799</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added &quot;Fach&quot; on listC.php">
+      <created>1643361136825</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643361136826</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed pupil list (listS, formularS, formularSAction)">
+      <created>1643361191679</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643361191679</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added Address (listA, formularA, formularAAction, ActionDeleteA)">
+      <created>1643362599822</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1643362599822</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed Address (listA, formularA, formularAAction, ActionDeleteA)">
+      <created>1643367109780</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643367109780</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added link to listA and formularA to index">
+      <created>1643367282839</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1643367282839</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added skz">
+      <created>1643371522681</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1643371522681</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changes by Sebastian">
+      <created>1643371536945</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1643371536945</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added saz (doesnt work, help)">
+      <created>1643389207233</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1643389207233</updated>
+    </task>
+    <task id="LOCAL-00013" summary="arlinds changes">
+      <created>1643389233500</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1643389233500</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/minigame2" />
+      <path value="$PROJECT_DIR$/schule" />
+    </ignored-roots>
+    <MESSAGE value="changed everything from get params to session params" />
+    <MESSAGE value="added listC.php to index.php" />
+    <MESSAGE value="added &quot;Fach&quot; on listC.php" />
+    <MESSAGE value="fixed pupil list (listS, formularS, formularSAction)" />
+    <MESSAGE value="added Address (listA, formularA, formularAAction, ActionDeleteA)" />
+    <MESSAGE value="fixed Address (listA, formularA, formularAAction, ActionDeleteA)" />
+    <MESSAGE value="added skz" />
+    <MESSAGE value="Changes by Sebastian" />
+    <MESSAGE value="added saz (doesnt work, help)" />
+    <MESSAGE value="added link to listA and formularA to index" />
+    <MESSAGE value="arlinds changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="arlinds changes" />
+  </component>
+</project>
