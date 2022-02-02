@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24353fe1-9265-42f5-b706-1a7880a618df" name="Changes" comment="changed ip and added config">
-      <change afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipconfig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/praktikanten.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formular.php" beforeDir="false" afterPath="$PROJECT_DIR$/formular.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formularAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/formularAction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/images/30.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/30.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/images/31.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/31.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/images/32.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/32.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototyp.php" beforeDir="false" afterPath="$PROJECT_DIR$/prototyp.php" afterDir="false" />
-    </list>
-    <list id="0e6f4748-bf14-432f-9053-d75f1b0c2401" name="Changes by Arlind" comment="">
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrcode-angelegt.php" beforeDir="false" afterPath="$PROJECT_DIR$/qrcode-angelegt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website.html" beforeDir="false" afterPath="$PROJECT_DIR$/website.html" afterDir="false" />
+    </list>
+    <list id="0e6f4748-bf14-432f-9053-d75f1b0c2401" name="Changes by Arlind" comment="Changes by Arlind">
+      <change beforePath="$PROJECT_DIR$/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/list.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +41,15 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/list.php">
+      <ranges>
+        <range start1="2" end1="3" start2="2" end2="3" changelist="24353fe1-9265-42f5-b706-1a7880a618df" />
+        <range start1="15" end1="15" start2="15" end2="16" changelist="24353fe1-9265-42f5-b706-1a7880a618df" />
+        <range start1="21" end1="22" start2="22" end2="23" changelist="0e6f4748-bf14-432f-9053-d75f1b0c2401" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -118,7 +125,8 @@
       <workItem from="1643637833877" duration="9322000" />
       <workItem from="1643698733155" duration="15650000" />
       <workItem from="1643716560517" duration="129000" />
-      <workItem from="1643724758739" duration="2842000" />
+      <workItem from="1643724758739" duration="3957000" />
+      <workItem from="1643793928516" duration="6725000" />
     </task>
     <task id="LOCAL-00001" summary="changed everything from get params to session params">
       <created>1643123683227</created>
@@ -232,7 +240,28 @@
       <option name="project" value="LOCAL" />
       <updated>1643727612716</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Changes by Arlind">
+      <created>1643727633020</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1643727633020</updated>
+    </task>
+    <task id="LOCAL-00018" summary="changed ip and added config">
+      <created>1643727781052</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1643727781052</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Changes by Arlind">
+      <created>1643727791856</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1643727791857</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +297,7 @@
     <MESSAGE value="changed everything" />
     <MESSAGE value="changed index" />
     <MESSAGE value="changed ip and added config" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed ip and added config" />
+    <MESSAGE value="Changes by Arlind" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by Arlind" />
   </component>
 </project>

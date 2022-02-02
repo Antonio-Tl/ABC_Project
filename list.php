@@ -1,6 +1,6 @@
 <?php
 require_once 'database.php';
-require_once('php-qrcode-master/lib/full/qrlib.php');
+require_once 'php-qrcode-master/lib/full/qrlib.php';
 require 'config.php';
 
 $content =
@@ -12,6 +12,7 @@ $content =
             <th scope="row">Link auf SVG</th>
             <th scope="row">Views</th>
         </tr>';
+
 
 $sql = 'select * from '.$DB.'.qrcodes';
 $QRCodes = query($sql);

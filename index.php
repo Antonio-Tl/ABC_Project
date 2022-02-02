@@ -2,6 +2,27 @@
 require_once 'database.php';
 require_once 'php-qrcode-master/lib/full/qrlib.php';
 require 'config.php';
+
+if(isset($_GET['id'])){
+    $sql = 'SELECT * FROM '.$DB.'.qrcodes WHERE id = '.(int)$_GET['id'];
+    $qrs = query($sql);
+    if(!sizeof($qrs) ){
+        die('ungültige id');
+    }
+    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+    $sql = 'INSERT INTO '.$DB.'.visits VALUES (null, NOW(),'.(int)$_GET['id'].', "'.mysqli_real_escape_string($dbh, serialize($_SERVER)).'", "'.$ip.'")';
+    query($sql);
+    header('Location: '.$qrs[0]['url']);
+    die();
+}
+
+
 $content =
     '<table class="table table-hover">
         <tr class="table-info">
@@ -73,17 +94,6 @@ $page = str_replace('###CONTENT###', $content, $page);
 echo $page;
 
 
-if(isset($_GET['id'])){
-    $sql = 'SELECT * FROM '.$DB.'qrcodes WHERE id = '.(int)$_GET['id'];
-    $qrs = query($sql);
-    if(!sizeof($qrs) ){
-        die('ungültige id');
-    }
-    $sql = 'INSERT INTO '.$DB.'.visits VALUES (null, NOW(),'.(int)$_GET['id'].', "'.mysqli_real_escape_string($dbh, serialize($_SERVER)).'")';
-    query($sql);
-    header('Location: '.$qrs[0]['url']);
-    die();
-}
 
 
 ?>
