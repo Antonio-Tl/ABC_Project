@@ -5,7 +5,7 @@
             viewBox="-4 -4 33 33" 
             width="132"
             height="132"
-            id="qrcode-dd529d1ff93497771435e928b5aa7292">
+            id="qrcode-c47e8f3c6ebd7f937febd7835efd70c5">
 <symbol id="tracker"><path d="m 0 7 0 7 7 0 0 -7 -7 0 z m 1 1 5 0 0 5 -5 0 0 -5 z m 1 1 0 3 3 0 0 -3 -3 0 z" style="fill:#000000;stroke:none"></path></symbol>
 <use x="0" y="-7" xlink:href="#tracker"></use>
 <use x="0" y="11" xlink:href="#tracker"></use>
