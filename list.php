@@ -20,7 +20,7 @@ $QRCodes = query($sql);
 foreach($QRCodes as $code){
     $path = 'images/';
     $file1 = $path.$code['id'].".svg";
-    $url='http://192.168.0.4/?id='.$code['id'];
+    $url='http://'.$SERVERIP.'/?id='.$code['id'];
     $svgCode = QRcode::svg($url);
 
     $text1 = $code['url'];
