@@ -1,4 +1,5 @@
 <?php
+
 $content = '';
 
 $template = file_get_contents('website.html');

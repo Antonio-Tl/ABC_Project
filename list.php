@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!$_SESSION['eingeloggt'] == 1){
+    header('Location: login.php');
+}
 require_once 'database.php';
 require_once 'php-qrcode-master/lib/full/qrlib.php';
 require 'config.php';
@@ -61,7 +65,7 @@ foreach($QRCodes as $code){
                 </div>
                 <div class="modal-body">'
                     .'<h3><center>'.$code['title'].'</center></h3>'
-                    .'<img width="100%" src="'.$file1.'">'.
+                    .'<img width="300" src="'.$file1.'">'.
 
                 '</div>
             </div>
@@ -89,6 +93,6 @@ $page = str_replace('###TITLE###', 'Liste aller QR-Codes', $template);
 $page = str_replace('###CONTENT###', $content, $page);
 echo $page;
 ?>
-
+    <input type="button" value ="Ausloggen" class="btn btn-info" onclick= 'document.cookie = "PHPSESSID=; expires=Thu, 01 Jan 2000 00:00:00 GMT";window.location.reload();'/>
     <button onclick="window.location.href='formular.php'"  class="btn btn-info">QR-Code eintragen</button>
 <?php

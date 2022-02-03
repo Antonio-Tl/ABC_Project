@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!$_SESSION['eingeloggt'] == 1){
+    header('Location: login.php');
+}
 $content = <<< EOTM
 <div style="width:600px">
 <form action="formularAction.php" method="POST">
