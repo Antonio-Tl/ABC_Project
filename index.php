@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'database.php';
 require_once 'php-qrcode-master/lib/full/qrlib.php';
 require 'config.php';
@@ -21,7 +22,9 @@ if(isset($_GET['id'])) {
     header('Location: ' . $qrs[0]['url']);
     die();
 }
-
+if(!$_SESSION['eingeloggt'] == 1){
+    header('Location: login.php');
+}
 $content =
     '<table class="table table-hover">
         <tr class="table-info">
@@ -63,6 +66,7 @@ foreach($QRCodes as $code){
                 </div>
                 <div class="modal-body">'
         .'<h3><center>'.$code['title'].'</center></h3>'
+        .'<h4><center>'.$code['url'].'</center></h4>'
         .'<img width="100%" src="'.$file1.'">'.
 
         '</div>

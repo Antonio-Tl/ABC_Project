@@ -1,10 +1,11 @@
 <?php
 session_start();
+require 'config.php';
 
 $name = $_POST['name'];
 $pass = $_POST['pass'];
 
-if ($name == 'admin' && $pass == '12345') {
+if ($name == $config_admin && $pass == $config_pw) {
     $_SESSION['eingeloggt'] = 1;
     header('Location: list.php');
 }else {
