@@ -35,15 +35,15 @@ $QRCodes = query($sql);
 
 foreach($QRCodes as $code){
     $path = 'images/';
-    $file1 = $path.$code['id'].".svg";
+    $file1 = $path.$code['id']."-".preg_replace('/[\x00-\x1F\x7F]/', '', $code['title']).".svg";
     $url='http://'.$SERVERIP.'/?id='.$code['id'];
-    $svgCode = QRcode::svg($url);
+    $svgCode = QRcode::svg($url, false, $file1, 3, 1080, false, 0);
 
     $text1 = $code['url'];
     $sql = 'SELECT count(1) as summe FROM '.$DB.'visits WHERE q_id = '.$code['id'];
     $counter = query($sql);
 
-    file_put_contents($file1, $svgCode);
+//    file_put_contents($file1, $svgCode);
     $content .= '<tr>';
     $content .= '<td >';
     $content .=  $code['title'];

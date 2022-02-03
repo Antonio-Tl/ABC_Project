@@ -143,7 +143,7 @@
 					case QR_AREA_TRACKER:
 								
 							if (!isset($lib['tracker'])) {
-								$lib['tracker'] = '<symbol id="tracker"><path d="m 0 7 0 7 7 0 0 -7 -7 0 z m 1 1 5 0 0 5 -5 0 0 -5 z m 1 1 0 3 3 0 0 -3 -3 0 z" style="fill:#000000;stroke:none"></path></symbol>';
+								$lib['tracker'] = '<symbol id="tracker"><path d="m 0 7 0 7 7 0 0 -7 -7 0 z m 1 1 5 0 0 5 -5 0 0 -5 z m 1 1 0 3 3 0 0 -3 -3 0 z" style="fill:lightseagreen;stroke:none"></path></symbol>';
 							}
 							
 							$symb = array_shift($path);
@@ -157,7 +157,7 @@
 				}
 			}
 			
-			$svg[] = '<path d="'.join(' ', $aggregate_paths).'" style="fill:#000000;stroke:none" ></path>';
+			$svg[] = '<path d="'.join(' ', $aggregate_paths).'" style="fill:lightseagreen;stroke:none" ></path>';
 							
 
 			
