@@ -8,7 +8,8 @@ require_once 'php-qrcode-master/lib/full/qrlib.php';
 require 'config.php';
 
 $content =
-    '<table class="table table-hover">
+    '    
+       <table class="table table-hover">
         <tr class="table-info">
             <th scope="row">Titel</th>
             <th scope="row">Url</th>
@@ -23,15 +24,15 @@ $QRCodes = query($sql);
 
 foreach($QRCodes as $code){
     $path = 'images/';
-    $file1 = $path.$code['id'].".svg";
+    $file1 = $path.$code['id']."-".preg_replace('/[\x00-\x1F\x7F]/', '', $code['title']).".svg";
     $url='http://'.$SERVERIP.'/?id='.$code['id'];
-    $svgCode = QRcode::svg($url);
+    $svgCode = QRcode::svg($url, false, $file1, 3, 1080, false, 0);
 
     $text1 = $code['url'];
     $sql = 'SELECT count(1) as summe FROM '.$DB.'.visits WHERE q_id = '.$code['id'];
     $counter = query($sql);
 
-    file_put_contents($file1, $svgCode);
+
     $content .= '<tr>';
     $content .= '<td >';
     $content .=  $code['title'];
@@ -50,7 +51,7 @@ foreach($QRCodes as $code){
     $content .= '</td>';
 
     $content .= '<td>';
-    $content .=  '<center>'.$counter[0]['summe'].'x</center>';
+    $content .=  '<center><a href="details.php?id='.$code['id'].'">'.$counter[0]['summe'].'x</a></center>';
     $content .= '</td>';
     $content .= '</tr>';
 
@@ -65,7 +66,7 @@ foreach($QRCodes as $code){
                 </div>
                 <div class="modal-body">'
                     .'<h3><center>'.$code['title'].'</center></h3>'
-                    .'<img width="300" src="'.$file1.'">'.
+                    .'<img width="100%" src="'.$file1.'">'.
 
                 '</div>
             </div>
@@ -75,6 +76,7 @@ foreach($QRCodes as $code){
 }
 
 $content .= '</table>';
+$content .= '<img src="chart.php">';
 $content .= '    <script>
     
     function showmd(id){
@@ -88,11 +90,10 @@ $content .= '    <script>
             modal.style.display = "none";
     }
     </script>';
+$content .= '<button onclick="window.location.href=\'formular.php\'"  class="btn btn-info">QR-Code eintragen</button>';
+
+
 $template = file_get_contents('website.html');
 $page = str_replace('###TITLE###', 'Liste aller QR-Codes', $template);
 $page = str_replace('###CONTENT###', $content, $page);
 echo $page;
-?>
-    <input type="button" value ="Ausloggen" class="btn btn-info" onclick= 'document.cookie = "PHPSESSID=; expires=Thu, 01 Jan 2000 00:00:00 GMT";window.location.reload();'/>
-    <button onclick="window.location.href='formular.php'"  class="btn btn-info">QR-Code eintragen</button>
-<?php

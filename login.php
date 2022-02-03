@@ -13,7 +13,7 @@ $content = '<center>
 </div> </center>';
 
 
-$template = file_get_contents('website.html');
+$template = file_get_contents('website2.html');
 $page = str_replace('###TITLE###', 'Login', $template);
 $page = str_replace('###CONTENT###', $content, $page);
 echo $page;
